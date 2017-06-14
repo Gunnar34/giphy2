@@ -9,14 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
     <script src="scripts/script.js" charset="utf-8"></script>
+    <script src="scripts/services/gif.service.js" charset="utf-8"></script>
     <title></title>
   </head>
 
   <body ng-app="myApp">
     <main ng-controller="mainController as mc">
       <input class="z-depth-5" type="text" name="" ng-model="mc.searchBar" placeholder="Search Giphy!">
-      <button type="button" name="button" ng-click="mc.searchGiphy()">Search</button>
-      <button type="button" name="button" ng-click="mc.randomGiphy()">Random</button>
+      <button class="btn" name="button" ng-click="mc.searchGiphy()">Search</button>
+      <button class="btn" name="button" ng-click="mc.randomGiphy()">Random</button>
       <div id="random">
             <img ng-src="{{mc.random}}"></img>
       </div>
